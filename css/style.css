@@ -1,11 +1,12 @@
 /* Vanaf hier SMALL screens en groter */
 
+/* Wat standaard margins en paddings voor de Main section. */
 main {
     padding: 0;
     margin: 0;
 }
 
-/* FONTS */
+/* Alle gebruikte Fonts. */
 .questrial {
     font-family: "Questrial", sans-serif;
     font-weight: 400;
@@ -26,8 +27,7 @@ main {
     font-style: normal;
 }
 
-/* FONT SIZES */
-
+/* De verschillende font-sizes die ik gebruikt heb. */
 .fs-7 {
     font-size: 10px;
 }
@@ -56,22 +56,23 @@ main {
     font-size: 30px;
 }
 
-/* COLORS */
+/* Wat standaardkleuren voor achtergrond en tekst. */
 
 .backgroundColor1 {
-    background-color: #b8cd06;
+    background-color: #b8cd06 !important;
 }
 
 .backgroundColor2 {
-    background-color: #343434;
+    background-color: #343434 !important;
 }
 
 .textColor1 {
-    color: #b8cd06;
+    color: #b8cd06 !important;
 }
 
 /* AFZONDERLIJKE INSTELLINGEN */
 
+/* Standaardwaarden voor p-tags in de header, en h2 tags op de pagina. */
 header p {
     font-family: "Raleway", sans-serif;
     font-size: 10px;
@@ -86,7 +87,7 @@ h2 {
     margin: 0;
 }
 
-/* Styling van bepaalde knoppen op de pagina. */
+/* Styling voor bepaalde knoppen op de pagina. */
 .normalButton {
     background: #b8cd06;
     color: white;
