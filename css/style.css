@@ -1,0 +1,222 @@
+/* Vanaf hier SMALL screens en groter */
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+/* FONTS */
+.questrial {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.raleway-bold {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.raleway-heavy {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* FONT SIZES */
+
+.fs-7 {
+    font-size: 10px;
+}
+
+.fs-8 {
+    font-size: 11px;
+}
+
+.fs-9 {
+    font-size: 13px;
+}
+
+.fs-10 {
+    font-size: 14px;
+}
+
+.fs-11 {
+    font-size: 16px;
+}
+
+.fs-12 {
+    font-size: 18px;
+}
+
+.fs-13 {
+    font-size: 30px;
+}
+
+/* AFZONDERLIJKE INSTELLINGEN */
+
+header p {
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.badgePosition {
+    background: #b8cd06;
+    top: 10px;
+    left: 30px;
+}
+
+.accordion-button {
+    font-family: "Raleway", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#accordion1 a, #accordion2 a {
+    font-family: "Raleway", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+.navButton {
+    padding: 10px 20px !important;
+}
+
+.navButton:hover {
+    background: #b8cd06;
+    color: white;
+}
+
+.hoverItem:hover {
+    color: #b8cd06 !important;
+    transition: color 0.3s ease;
+}
+
+.form-check-label {
+    font-family: "Raleway", sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
+
+.form-check-input:hover {
+    cursor: pointer;
+}
+
+.tag {
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    background: #eeeeee;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+
+.tag:hover {
+    background: #b8cd06
+}
+
+.carouselButton {
+    height: 15px !important;
+    width: 15px !important;
+    border: 10px white !important;
+    margin-bottom: 25px;
+}
+
+.carouselButton + .active {
+    background-color: #b8cd06 !important;
+}
+
+.carousel-caption {
+    position: absolute;
+    height: 250px;
+    left: 550px;
+}
+
+.textColor1 {
+    color: #b8cd06;
+}
+
+.card {
+    border-color: rgba(0,0,0,0.04);
+}
+
+.cardCategoryTitle {
+    font-family: "Questrial", sans-serif;
+    color: #b8cd06;
+    font-size: 11px;
+}
+
+#emailInput {
+    width: 120px;
+}
+
+#emailInput:focus {
+    border-color: transparent !important;
+    outline: transparent;
+}
+
+#emailInput::placeholder {
+    color: white;
+}
+
+#emailButton:hover {
+    background-color: white;
+}
+
+.backgroundColor1 {
+    background-color: #b8cd06;
+}
+
+.tag2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    text-decoration: none;
+    color: lightgray;
+    background: #424242;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+
+.tag2:hover {
+    background: #b8cd06
+}
+
+.dropend:hover .dropdown-menu {
+    display: block;
+    margin-left: 320px;
+    background-color: gray;
+}
+
+/* MEDIA QUERIES*/
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #emailInput {
+        width: 200px;
+        height: 50px;
+    }
+}
