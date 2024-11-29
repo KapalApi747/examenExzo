@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<header id="mainHeader" class="container-fluid border-bottom p-0">
+<header class="container-fluid border-bottom p-0" id="mainHeader">
     <div class="row mx-1 mx-lg-5">
         <div class="col-12 d-flex" id="contact-info">
             <div class="col-lg-6 d-none d-lg-flex">
@@ -41,7 +41,8 @@
                         <a class="raleway-bold fs-7 text-decoration-none text-black hoverItem" href="#">REGISTER</a>
                     </div>
                     <div class="dropdown raleway-bold py-2 px-4 m-0 border-end d-flex align-items-center">
-                        <a class="btn border-0 dropdown-toggle hoverItem fs-9" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a aria-expanded="false" class="btn border-0 dropdown-toggle hoverItem fs-9" data-bs-toggle="dropdown"
+                           href="#" role="button">
                             EN
                         </a>
                         <ul class="dropdown-menu">
@@ -160,7 +161,8 @@
                     <div class="accordion" id="accordion2">
                         <div class="accordion-item border-top-0 border-start-0 border-end-0">
                             <h2 class="accordion-header">
-                                <button aria-controls="collapseOCOne" aria-expanded="false" class="accordion-button collapsed px-0"
+                                <button aria-controls="collapseOCOne" aria-expanded="false"
+                                        class="accordion-button collapsed px-0"
                                         data-bs-target="#collapseOCOne" data-bs-toggle="collapse" type="button">
                                     LAPTOPS & COMPUTERS
                                 </button>
@@ -454,7 +456,8 @@
                     <div class="accordion" id="accordion1">
                         <div class="accordion-item border-top-0 border-start-0 border-end-0">
                             <h2 class="accordion-header">
-                                <button aria-controls="collapseOne" aria-expanded="false" class="accordion-button collapsed px-0"
+                                <button aria-controls="collapseOne" aria-expanded="false"
+                                        class="accordion-button collapsed px-0"
                                         data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">
                                     LAPTOPS & COMPUTERS
                                 </button>
@@ -741,7 +744,7 @@
             <section class="col-12 col-lg-9 mb-5" id="sectionMain">
                 <section id="sectionMainCarousel">
                     <div class="carousel slide" id="carouselExampleCaptions">
-                        <div class="carousel-indicators">
+                        <div class="carousel-indicators my-0 my-lg-2">
                             <button aria-current="true" aria-label="Slide 1"
                                     class="active carouselButton rounded-circle mx-2"
                                     data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions"
@@ -750,14 +753,14 @@
                                     data-bs-target="#carouselExampleCaptions"
                                     type="button"></button>
                         </div>
-                        <div class="carousel-inner rounded-4">
+                        <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img alt="best sport gadget 1" class="d-block w-100" src="./img/carroussel1.png">
                                 <div class="carousel-caption d-none d-xxl-block">
                                     <p class="questrial fs-10 m-0">DON'T MISS!</p>
                                     <p class="questrial fs-13 textColor1">UP TO 70%</p>
                                     <p class="raleway-heavy fs-12">BEST SPORT GADGET</p>
-                                    <a class="btn btn-light text-decoration-none" href="#">LEARN MORE</a>
+                                    <a class="raleway-bold fs-8 btn rounded-pill text-decoration-none normalButton px-4 py-3" href="#">LEARN MORE</a>
                                 </div>
                             </div>
                             <div class="carousel-item">
@@ -766,19 +769,27 @@
                                     <p class="questrial fs-10 m-0">DON'T MISS!</p>
                                     <p class="questrial fs-13 textColor1">UP TO 70%</p>
                                     <p class="raleway-heavy fs-12">BEST SPORT GADGET</p>
-                                    <a class="btn btn-light text-decoration-none" href="#">LEARN MORE</a>
+                                    <a class="raleway-bold fs-8 btn rounded-pill text-decoration-none normalButton px-4 py-3" href="#">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 bg-dark d-flex flex-column d-xxl-none text-center py-4 rounded-bottom-1">
+                        <p class="questrial fs-10 text-white">DON'T MISS!</p>
+                        <p class="questrial fs-13 textColor1">UP TO 70%</p>
+                        <p class="raleway-heavy fs-12 text-white">BEST SPORT GADGET</p>
+                        <a class="col-4 offset-4 raleway-bold fs-8 btn rounded-pill text-decoration-none normalButton my-3 px-4 py-3" href="#">LEARN MORE</a>
+                    </div>
                 </section>
                 <section class="container" id="sectionFilterButton">
                     <article class="row m-5">
-                        <a aria-controls="offcanvasExample" class="btn btn-primary d-lg-none" data-bs-toggle="offcanvas"
-                           href="#sectionOCFilter"
-                           role="button">
-                            FILTERS
-                        </a>
+                        <div class="col-12 d-flex justify-content-center">
+                            <a aria-controls="offcanvasExample" class="btn d-lg-none normalButton rounded-pill p-3 px-5" data-bs-toggle="offcanvas"
+                               href="#sectionOCFilter"
+                               role="button">
+                                FILTERS
+                            </a>
+                        </div>
                     </article>
                 </section>
                 <section id="sectionMainProducts">
@@ -789,7 +800,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-4">
-                            <div class="card border-start-0 border-top-0 border-bottom-0 rounded-0 mb-5">
+                            <article class="card border-start-0 border-top-0 border-bottom-0 rounded-0 mb-5">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
                                     <h3 class="cardCategoryTitle">ACCESSORIES</h3>
                                     <h2 class="raleway-heavy fs-9">GOLFSENSE</h2>
@@ -798,8 +809,12 @@
                                     <p class="card-text questrial fs-9">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing elit. Quas, totam?</p>
                                 </div>
-                            </div>
-                            <div class="card border-start-0 border-top-0 border-bottom-0 rounded-0 mb-5">
+                                <div class="cardButtonsLarge d-flex flex-column">
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill mb-3" href="#">Buy Now</a>
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill" href="#">Details</a>
+                                </div>
+                            </article>
+                            <article class="card border-start-0 border-top-0 border-bottom-0 rounded-0 mb-5">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
                                     <h3 class="cardCategoryTitle">HEADPHONES</h3>
                                     <h2 class="raleway-heavy fs-9">FITNESS HEADPHONES SENSE</h2>
@@ -808,8 +823,12 @@
                                     <p class="card-text questrial fs-9">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing elit. Quas, totam?</p>
                                 </div>
-                            </div>
-                            <div class="card border-start-0 border-top-0 border-bottom-0 rounded-0">
+                                <div class="cardButtonsLarge d-flex flex-column">
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill mb-3" href="#">Buy Now</a>
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill" href="#">Details</a>
+                                </div>
+                            </article>
+                            <article class="card border-start-0 border-top-0 border-bottom-0 rounded-0">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
                                     <h3 class="cardCategoryTitle">FITNESS TRACKER</h3>
                                     <h2 class="raleway-heavy fs-9">TRACKER MOOV X</h2>
@@ -818,10 +837,14 @@
                                     <p class="card-text questrial fs-9">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing elit. Quas, totam?</p>
                                 </div>
-                            </div>
+                                <div class="cardButtonsLarge d-flex flex-column">
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill mb-3" href="#">Buy Now</a>
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill" href="#">Details</a>
+                                </div>
+                            </article>
                         </div>
                         <div class="col-12 col-lg-4">
-                            <div class="card border-start-0 border-top-0 border-bottom-0 rounded-0">
+                            <article class="card border-start-0 border-top-0 border-bottom-0 rounded-0">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
                                     <h3 class="cardCategoryTitle">SMART WATCHES</h3>
                                     <h2 class="raleway-heavy fs-9">WATCH 42MM SMARTWATCH</h2>
@@ -830,8 +853,12 @@
                                     <p class="card-text questrial fs-9">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing elit. Quas, totam?</p>
                                 </div>
-                            </div>
-                            <div class="card border-start-0 border-top-0 border-bottom-0 rounded-0 mt-5">
+                                <div class="cardButtonsLarge d-flex flex-column">
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill mb-3" href="#">Buy Now</a>
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill" href="#">Details</a>
+                                </div>
+                            </article>
+                            <article class="card border-start-0 border-top-0 border-bottom-0 rounded-0 mt-5">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
                                     <h3 class="cardCategoryTitle">ACCESSORIES</h3>
                                     <h2 class="raleway-heavy fs-9">GROOVE WATER BOTTLE</h2>
@@ -840,8 +867,12 @@
                                     <p class="card-text questrial fs-9">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing elit. Quas, totam?</p>
                                 </div>
-                            </div>
-                            <div class="card border-start-0 border-top-0 border-bottom-0 rounded-0 mt-5">
+                                <div class="cardButtonsLarge d-flex flex-column">
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill mb-3" href="#">Buy Now</a>
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill" href="#">Details</a>
+                                </div>
+                            </article>
+                            <article class="card border-start-0 border-top-0 border-bottom-0 rounded-0 mt-5">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
                                     <h3 class="cardCategoryTitle">HEADPHONES</h3>
                                     <h2 class="raleway-heavy fs-9">FITNESS HEADPHONES</h2>
@@ -850,10 +881,14 @@
                                     <p class="card-text questrial fs-9">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing elit. Quas, totam?</p>
                                 </div>
-                            </div>
+                                <div class="cardButtonsLarge d-flex flex-column">
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill mb-3" href="#">Buy Now</a>
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill" href="#">Details</a>
+                                </div>
+                            </article>
                         </div>
                         <div class="col-12 col-lg-4">
-                            <div class="card border-start-0 border-top-0 border-bottom-0 rounded-0">
+                            <article class="card border-start-0 border-top-0 border-bottom-0 rounded-0">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
                                     <h3 class="cardCategoryTitle">HEADPHONES</h3>
                                     <h2 class="raleway-heavy fs-9">FITNESS HEADPHONES INSPIRE</h2>
@@ -862,8 +897,12 @@
                                     <p class="card-text questrial fs-9">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing elit. Quas, totam?</p>
                                 </div>
-                            </div>
-                            <div class="card border-start-0 border-top-0 border-bottom-0 rounded-0 mt-5">
+                                <div class="cardButtonsLarge d-flex flex-column">
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill mb-3" href="#">Buy Now</a>
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill" href="#">Details</a>
+                                </div>
+                            </article>
+                            <article class="card border-start-0 border-top-0 border-bottom-0 rounded-0 mt-5">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
                                     <h3 class="cardCategoryTitle">FITNESS TRACKER</h3>
                                     <h2 class="raleway-heavy fs-9">FLEX FITNESS TRACKER</h2>
@@ -872,8 +911,12 @@
                                     <p class="card-text questrial fs-9">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing elit. Quas, totam?</p>
                                 </div>
-                            </div>
-                            <div class="card border-start-0 border-top-0 border-bottom-0 rounded-0 mt-5">
+                                <div class="cardButtonsLarge d-flex flex-column">
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill mb-3" href="#">Buy Now</a>
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill" href="#">Details</a>
+                                </div>
+                            </article>
+                            <article class="card border-start-0 border-top-0 border-bottom-0 rounded-0 mt-5">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
                                     <h3 class="cardCategoryTitle">FITNESS TRACKER</h3>
                                     <h2 class="raleway-heavy fs-9">SMART BRACELET</h2>
@@ -882,7 +925,11 @@
                                     <p class="card-text questrial fs-9">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing elit. Quas, totam?</p>
                                 </div>
-                            </div>
+                                <div class="cardButtonsLarge d-flex flex-column">
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill mb-3" href="#">Buy Now</a>
+                                    <a class="raleway-bold fs-9 btn normalButton rounded-pill" href="#">Details</a>
+                                </div>
+                            </article>
                         </div>
                     </div>
                     <div class="row">
@@ -920,6 +967,9 @@
                                     <p class="card-text questrial fs-11">$98.00</p>
                                 </div>
                             </div>
+                            <div class="cardButtonSmall">
+                                <a class="raleway-bold fs-9 btn normalButton rounded-pill px-4" href="#">Details</a>
+                            </div>
                         </div>
                         <div class="card border border-0 my-2">
                             <div class="card-body d-flex p-0">
@@ -932,6 +982,9 @@
                                     <p class="card-text questrial fs-11">$12.00</p>
                                 </div>
                             </div>
+                            <div class="cardButtonSmall d-flex">
+                                <a class="raleway-bold fs-9 btn normalButton rounded-pill px-4" href="#">Details</a>
+                            </div>
                         </div>
                         <div class="card border border-0 my-2">
                             <div class="card-body d-flex p-0">
@@ -943,6 +996,9 @@
                                     <h2 class="raleway-heavy fs-9">HEADPHONES CASE</h2>
                                     <p class="card-text questrial fs-11">$24.00</p>
                                 </div>
+                            </div>
+                            <div class="cardButtonSmall d-flex">
+                                <a class="raleway-bold fs-9 btn normalButton rounded-pill px-4" href="#">Details</a>
                             </div>
                         </div>
                     </article>
@@ -959,17 +1015,8 @@
                                     <p class="card-text questrial fs-11">$98.00</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card border border-0 my-2">
-                            <div class="card-body d-flex p-0">
-                                <div class="border border-1 me-3">
-                                    <img alt="tech-sm-wireless-hp" src="./img/smimage1.png">
-                                </div>
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h3 class="cardCategoryTitle">WIRELESS</h3>
-                                    <h2 class="raleway-heavy fs-9">WIRELESS HEADPHONES</h2>
-                                    <p class="card-text questrial fs-11">$98.00</p>
-                                </div>
+                            <div class="cardButtonSmall">
+                                <a class="raleway-bold fs-9 btn normalButton rounded-pill px-4" href="#">Details</a>
                             </div>
                         </div>
                         <div class="card border border-0 my-2">
@@ -982,6 +1029,24 @@
                                     <h2 class="raleway-heavy fs-9">WIRELESS HEADPHONES</h2>
                                     <p class="card-text questrial fs-11">$98.00</p>
                                 </div>
+                            </div>
+                            <div class="cardButtonSmall">
+                                <a class="raleway-bold fs-9 btn normalButton rounded-pill px-4" href="#">Details</a>
+                            </div>
+                        </div>
+                        <div class="card border border-0 my-2">
+                            <div class="card-body d-flex p-0">
+                                <div class="border border-1 me-3">
+                                    <img alt="tech-sm-wireless-hp" src="./img/smimage1.png">
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h3 class="cardCategoryTitle">WIRELESS</h3>
+                                    <h2 class="raleway-heavy fs-9">WIRELESS HEADPHONES</h2>
+                                    <p class="card-text questrial fs-11">$98.00</p>
+                                </div>
+                            </div>
+                            <div class="cardButtonSmall">
+                                <a class="raleway-bold fs-9 btn normalButton rounded-pill px-4" href="#">Details</a>
                             </div>
                         </div>
                     </article>
@@ -998,17 +1063,8 @@
                                     <p class="card-text questrial fs-11">$98.00</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card border border-0 my-2">
-                            <div class="card-body d-flex p-0">
-                                <div class="border border-1 me-3">
-                                    <img alt="tech-sm-wireless-hp" src="./img/smimage1.png">
-                                </div>
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h3 class="cardCategoryTitle">WIRELESS</h3>
-                                    <h2 class="raleway-heavy fs-9">WIRELESS HEADPHONES</h2>
-                                    <p class="card-text questrial fs-11">$98.00</p>
-                                </div>
+                            <div class="cardButtonSmall">
+                                <a class="raleway-bold fs-9 btn normalButton rounded-pill px-4" href="#">Details</a>
                             </div>
                         </div>
                         <div class="card border border-0 my-2">
@@ -1021,6 +1077,24 @@
                                     <h2 class="raleway-heavy fs-9">WIRELESS HEADPHONES</h2>
                                     <p class="card-text questrial fs-11">$98.00</p>
                                 </div>
+                            </div>
+                            <div class="cardButtonSmall">
+                                <a class="raleway-bold fs-9 btn normalButton rounded-pill px-4" href="#">Details</a>
+                            </div>
+                        </div>
+                        <div class="card border border-0 my-2">
+                            <div class="card-body d-flex p-0">
+                                <div class="border border-1 me-3">
+                                    <img alt="tech-sm-wireless-hp" src="./img/smimage1.png">
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h3 class="cardCategoryTitle">WIRELESS</h3>
+                                    <h2 class="raleway-heavy fs-9">WIRELESS HEADPHONES</h2>
+                                    <p class="card-text questrial fs-11">$98.00</p>
+                                </div>
+                            </div>
+                            <div class="cardButtonSmall">
+                                <a class="raleway-bold fs-9 btn normalButton rounded-pill px-4" href="#">Details</a>
                             </div>
                         </div>
                     </article>
@@ -1037,17 +1111,8 @@
                                     <p class="card-text questrial fs-11">$98.00</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card border border-0 my-2">
-                            <div class="card-body d-flex p-0">
-                                <div class="border border-1 me-3">
-                                    <img alt="tech-sm-wireless-hp" src="./img/smimage1.png">
-                                </div>
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h3 class="cardCategoryTitle">WIRELESS</h3>
-                                    <h2 class="raleway-heavy fs-9">WIRELESS HEADPHONES</h2>
-                                    <p class="card-text questrial fs-11">$98.00</p>
-                                </div>
+                            <div class="cardButtonSmall">
+                                <a class="raleway-bold fs-9 btn normalButton rounded-pill px-4" href="#">Details</a>
                             </div>
                         </div>
                         <div class="card border border-0 my-2">
@@ -1060,6 +1125,24 @@
                                     <h2 class="raleway-heavy fs-9">WIRELESS HEADPHONES</h2>
                                     <p class="card-text questrial fs-11">$98.00</p>
                                 </div>
+                            </div>
+                            <div class="cardButtonSmall">
+                                <a class="raleway-bold fs-9 btn normalButton rounded-pill px-4" href="#">Details</a>
+                            </div>
+                        </div>
+                        <div class="card border border-0 my-2">
+                            <div class="card-body d-flex p-0">
+                                <div class="border border-1 me-3">
+                                    <img alt="tech-sm-wireless-hp" src="./img/smimage1.png">
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h3 class="cardCategoryTitle">WIRELESS</h3>
+                                    <h2 class="raleway-heavy fs-9">WIRELESS HEADPHONES</h2>
+                                    <p class="card-text questrial fs-11">$98.00</p>
+                                </div>
+                            </div>
+                            <div class="cardButtonSmall">
+                                <a class="raleway-bold fs-9 btn normalButton rounded-pill px-4" href="#">Details</a>
                             </div>
                         </div>
                     </article>
@@ -1284,12 +1367,11 @@
     const header = document.querySelector('#mainHeader');
 
     // Voeg een event listener toe voor het scrollen van de navbar.
-    window.addEventListener('scroll',function(){
-        if (window.scrollY > 50){
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
             header.classList.add('scrolled');
-        }
-        else {
+        } else {
             navbar.classList.remove('scrolled');
             header.classList.remove('scrolled');
         }

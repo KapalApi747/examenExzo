@@ -183,8 +183,49 @@ h2 {
     color: #b8cd06;
 }
 
-.card {
+.card-body {
     border-color: rgba(0,0,0,0.04);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, filter 0.3s;
+    z-index: 1;
+}
+
+.cardButtonsLarge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 2;
+}
+
+.cardButtonSmall {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 2;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .card-body{
+    filter: blur(2px);
+    transform: scale(1.03);
+}
+
+.card:hover .cardButtonsLarge {
+    opacity: 1;
+}
+
+.card:hover .cardButtonSmall {
+    opacity: 1;
 }
 
 .cardCategoryTitle {
@@ -228,7 +269,18 @@ h2 {
 }
 
 .tag2:hover {
-    background: #b8cd06
+    background: #b8cd06;
+}
+
+.normalButton {
+    background: #b8cd06;
+    color: white;
+}
+
+.normalButton:hover {
+    background: white;
+    color: black;
+    border-color: black;
 }
 
 .dropend:hover .dropdown-menu {
