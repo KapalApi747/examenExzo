@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<header class="container-fluid border-bottom p-0">
+<header id="mainHeader" class="container-fluid border-bottom p-0">
     <div class="row mx-1 mx-lg-5">
         <div class="col-12 d-flex" id="contact-info">
             <div class="col-lg-6 d-none d-lg-flex">
@@ -40,7 +40,18 @@
                         <p class="questrial fs-7 p-0 m-0 px-1">OR</p>
                         <a class="raleway-bold fs-7 text-decoration-none text-black hoverItem" href="#">REGISTER</a>
                     </div>
-                    <p class="py-2 px-4 m-0 border-end d-flex align-items-center">EN</p>
+                    <div class="dropdown py-2 px-4 m-0 border-end d-flex align-items-center">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            EN
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item hoverItem" href="#">FR</a></li>
+                            <li><a class="dropdown-item hoverItem" href="#">RU</a></li>
+                            <li><a class="dropdown-item hoverItem" href="#">IT</a></li>
+                            <li><a class="dropdown-item hoverItem" href="#">IT</a></li>
+                        </ul>
+                    </div>
+                    <!--<p class="py-2 px-4 m-0 border-end d-flex align-items-center">EN</p>-->
                     <a class="py-2 px-4 m-0 border-end d-none d-lg-flex align-items-center text-black" href="#">
                         <i class="bi bi-heart fs-5 hoverItem"></i>
                     </a>
@@ -52,7 +63,7 @@
                                 5
                             </span>
                         </i>
-                        <span class="questrial fs-9">$1195.00</span>
+                        <span class="questrial fs-9 textColor1">$1195.00</span>
                     </a>
                 </div>
                 <div class="d-flex">
@@ -68,40 +79,41 @@
 </header>
 
 <nav class="navbar navbar-expand-lg border-bottom">
-    <div class="container-fluid mx-1 mx-lg-5">
+    <section class="container-fluid mx-1 mx-lg-5" id="sectionNav">
         <a class="navbar-brand order-1" href="#">
             <img alt="logo rdsto" src="./img/logo.png">
         </a>
-        <div class="d-lg-flex justify-content-lg-end collapse navbar-collapse order-3 order-lg-2"
-             id="navbarSupportedContent">
-            <ul class="navbar-nav d-flex align-items-center">
+        <article class="d-lg-flex justify-content-lg-end collapse navbar-collapse order-3 order-lg-2"
+                 id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex align-items-center navBarList list-group">
                 <li class="nav-item">
-                    <a class="nav-link raleway-bold fs-8 navButton rounded-pill" href="#">HOME</a>
+                    <a aria-current="true"
+                       class="nav-link list-group-item raleway-bold fs-8 active rounded-pill" href="#">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link raleway-bold fs-8 navButton rounded-pill" href="#">ABOUT US</a>
+                    <a class="nav-link list-group-item raleway-bold fs-8 rounded-pill" href="#">ABOUT US</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link raleway-bold fs-8 navButton rounded-pill" href="#">PRODUCTS</a>
+                    <a class="nav-link list-group-item raleway-bold fs-8 rounded-pill" href="#">PRODUCTS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link raleway-bold fs-8 navButton rounded-pill" href="#">SERVICES</a>
+                    <a class="nav-link list-group-item raleway-bold fs-8 rounded-pill" href="#">SERVICES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link raleway-bold fs-8 navButton rounded-pill" href="#">BLOG</a>
+                    <a class="nav-link list-group-item raleway-bold fs-8 rounded-pill" href="#">BLOG</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link raleway-bold fs-8 navButton rounded-pill" href="#">GALLERY</a>
+                    <a class="nav-link list-group-item raleway-bold fs-8 rounded-pill" href="#">GALLERY</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link raleway-bold fs-8 navButton rounded-pill" href="#">PAGES</a>
+                    <a class="nav-link list-group-item raleway-bold fs-8 rounded-pill" href="#">PAGES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link raleway-bold fs-8 navButton rounded-pill" href="#">CONTACT</a>
+                    <a class="nav-link list-group-item raleway-bold fs-8 rounded-pill" href="#">CONTACT</a>
                 </li>
             </ul>
-        </div>
-        <div class="d-flex justify-content-end align-items-center order-2 order-lg-3">
+        </article>
+        <article class="d-flex justify-content-end align-items-center order-2 order-lg-3">
             <a class="d-lg-flex px-2 px-lg-0 ps-lg-2 align-items-center text-decoration-none text-black" href="#">
                 <i class="bi bi-search fs-4 hoverItem"></i>
             </a>
@@ -116,32 +128,25 @@
                     </span>
                 </i>
             </a>
-        </div>
-    </div>
+        </article>
+    </section>
 </nav>
 
 <main id="main">
     <section class="container" id="sectionCategories">
-        <div class="row m-5">
-            <div class="col-12 col-lg-4 d-flex justify-content-between">
-                <p>HOME</p>
-                <p>></p>
-                <p>ACCESSORIES</p>
-                <p>></p>
-                <p>GADGETS</p>
-                <p>></p>
-                <p>SPORT GADGETS</p>
+        <div class="row mt-4 mx-lg-5">
+            <div class="col-12 d-flex justify-content-start">
+                <a class="questrial fs-8 text-decoration-none text-black hoverItem me-2" href="#">
+                    HOME
+                </a>
+                <p class="questrial fs-8 me-2">></p>
+                <a class="questrial fs-8 text-decoration-none text-black hoverItem me-2" href="#">ACCESSORIES</a>
+                <p class="questrial fs-8 me-2">></p>
+                <a class="questrial fs-8 text-decoration-none text-black hoverItem me-2" href="#">GADGETS</a>
+                <p class="questrial fs-8 me-2">></p>
+                <a class="questrial fs-8 text-decoration-none text-black hoverItem me-2" href="#">SPORT GADGETS</a>
             </div>
         </div>
-    </section>
-    <section class="container" id="sectionFilterButton">
-        <article class="row m-5">
-            <a aria-controls="offcanvasExample" class="btn btn-primary d-lg-none" data-bs-toggle="offcanvas"
-               href="#sectionOCFilter"
-               role="button">
-                FILTERS
-            </a>
-        </article>
     </section>
     <section aria-labelledby="offcanvasExampleLabel" class="offcanvas offcanvas-start" id="sectionOCFilter"
              tabindex="-1">
@@ -441,9 +446,9 @@
             </div>
         </div>
     </section>
-    <section class="container mt-5" id="sectionFilter">
-        <div class="row mx-5">
-            <div class="col-12 col-lg-3 d-none d-lg-block" id="partFilter">
+    <section class="container mt-5" id="sectionFilterPlusMain">
+        <div class="row mx-lg-5">
+            <section class="col-12 col-lg-3 d-none d-lg-block" id="sectionFilter">
                 <article class="d-flex flex-column">
                     <h2>POPULAR</h2>
                     <div class="accordion" id="accordion1">
@@ -732,9 +737,9 @@
                         <a class="btn btn-primary rounded-pill tag">PROFESSIONAL</a>
                     </div>
                 </article>
-            </div>
-            <div class="col-12 col-lg-9 mb-5" id="partMain">
-                <article>
+            </section>
+            <section class="col-12 col-lg-9 mb-5" id="sectionMain">
+                <section id="sectionMainCarousel">
                     <div class="carousel slide" id="carouselExampleCaptions">
                         <div class="carousel-indicators">
                             <button aria-current="true" aria-label="Slide 1"
@@ -746,9 +751,9 @@
                                     type="button"></button>
                         </div>
                         <div class="carousel-inner rounded-4">
-                            <div class="carousel-item active">
-                                <img alt="best sport gadget 1" class="d-block w-100" src="./img/carroussel1.png">
-                                <div class="carousel-caption">
+                            <div class="carousel-item m-0 p-0 active">
+                                <img alt="best sport gadget 1" class="w-100" src="./img/carroussel1.png">
+                                <div class="carousel-caption d-none d-xxl-block">
                                     <p class="questrial fs-10 m-0">DON'T MISS!</p>
                                     <p class="questrial fs-13 textColor1">UP TO 70%</p>
                                     <p class="raleway-heavy fs-12">BEST SPORT GADGET</p>
@@ -766,8 +771,17 @@
                             </div>
                         </div>
                     </div>
-                </article>
-                <article>
+                </section>
+                <section class="container" id="sectionFilterButton">
+                    <article class="row m-5">
+                        <a aria-controls="offcanvasExample" class="btn btn-primary d-lg-none" data-bs-toggle="offcanvas"
+                           href="#sectionOCFilter"
+                           role="button">
+                            FILTERS
+                        </a>
+                    </article>
+                </section>
+                <section id="sectionMainProducts">
                     <div class="row m-5">
                         <div class="col-12">
                             <h2>SPORT GADGETS</h2>
@@ -889,11 +903,11 @@
                             </div>
                         </div>
                     </div>
-                </article>
-            </div>
-            <div id="partSmallProducts">
-                <article class="row mt-4 mb-5">
-                    <div class="col-12 col-lg-3">
+                </section>
+            </section>
+            <section id="sectionSmallProducts">
+                <div class="row mt-4 mb-5">
+                    <article class="col-12 col-lg-3">
                         <h2 class="raleway-heavy fs-12 my-4 text-center">HOT SALE</h2>
                         <div class="card border border-0 my-2">
                             <div class="card-body d-flex p-0">
@@ -931,8 +945,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-3">
+                    </article>
+                    <article class="col-12 col-lg-3">
                         <h2 class="raleway-heavy fs-12 my-4 text-center">TOP RATED</h2>
                         <div class="card border border-0 my-2">
                             <div class="card-body d-flex p-0">
@@ -970,8 +984,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-3">
+                    </article>
+                    <article class="col-12 col-lg-3">
                         <h2 class="raleway-heavy fs-12 my-4 text-center">POPULAR</h2>
                         <div class="card border border-0 my-2">
                             <div class="card-body d-flex p-0">
@@ -1009,8 +1023,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-3">
+                    </article>
+                    <article class="col-12 col-lg-3">
                         <h2 class="raleway-heavy fs-12 my-4 text-center">BEST CHOICE</h2>
                         <div class="card border border-0 my-2">
                             <div class="card-body d-flex p-0">
@@ -1048,9 +1062,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </article>
-            </div>
+                    </article>
+                </div>
+            </section>
         </div>
     </section>
     <section class="container-fluid py-5 mt-5 backgroundColor1" id="sectionEmail">
@@ -1149,7 +1163,7 @@
                     <header class="mb-3 text-center text-lg-start">
                         <h2 class="raleway-bold fs-9 text-white">SOME POSTS</h2>
                     </header>
-                    <div class="d-flex mb-3">
+                    <div class="d-flex justify-content-center justify-content-lg-start mb-3">
                         <div class="d-flex align-items-center me-2">
                             <a href="#">
                                 <img alt="postimage1" src="./img/postimage1.png">
@@ -1161,7 +1175,7 @@
                                 DOLOR SIT AMET, CONSECTETUR.</a>
                         </div>
                     </div>
-                    <div class="d-flex mb-3">
+                    <div class="d-flex justify-content-center justify-content-lg-start mb-3">
                         <div class="d-flex align-items-center me-2">
                             <a href="#">
                                 <img alt="postimage2" src="./img/postimage2.png">
@@ -1173,7 +1187,7 @@
                                 DOLOR SIT AMET, CONSECTETUR.</a>
                         </div>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex justify-content-center justify-content-lg-start">
                         <div class="d-flex align-items-center me-2">
                             <a href="#">
                                 <img alt="postimage3" src="./img/postimage3.png">
@@ -1265,6 +1279,23 @@
 
 
 <script>
+    // De navbar laten meescrollen met de rest van de pagina.
+    const navbar = document.querySelector('.navbar');
+    const header = document.querySelector('#mainHeader');
+
+    // Voeg een event listener toe voor het scrollen van de navbar.
+    window.addEventListener('scroll',function(){
+        if (window.scrollY > 50){
+            navbar.classList.add('scrolled');
+            header.classList.add('scrolled');
+        }
+        else {
+            navbar.classList.remove('scrolled');
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Functie voor het aanpassen van de prijs in de prijs filter slider.
     function updatePrice(value) {
         document.getElementById('priceValue').textContent = value;
         document.getElementById('priceValue2').textContent = value;
@@ -1277,6 +1308,7 @@
             button.style.border = '2px solid red'; // Highlight selected button
         });
     });
+
 </script>
 <script crossorigin="anonymous"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

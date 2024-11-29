@@ -94,12 +94,37 @@ h2 {
     color: black;
 }
 
-.navButton {
-    padding: 10px 20px !important;
+#mainHeader.scrolled {
+    margin-bottom: 110px;
 }
 
-.navButton:hover {
-    background: #b8cd06;
+.navbar {
+    position: relative;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.navbar.scrolled{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+}
+
+.navBarList .nav-item .list-group-item {
+    border: none;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+.navBarList .nav-item .active {
+    background-color: #b8cd06;
+    color: white;
+    border: none;
+}
+
+.navBarList .nav-item .list-group-item:hover {
+    background-color: #b8cd06;
     color: white;
 }
 
